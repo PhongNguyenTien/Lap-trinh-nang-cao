@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-int MAX_BAD_GUESSES = 7;
+int MAX_BAD_GUESSES = 4;
 string chooseWord();
 void renderGame(string guessedWord, int badGuessCount);
 char readAGuess();
