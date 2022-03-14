@@ -22,9 +22,9 @@ int main()
 	
 	renderGame(guessedWord, badGuessCount);
 	if (badGuessCount < MAX_BAD_GUESSES) 
-		cout << "Congratulations! You win!";
+		cout << "Chuc mung ban da thang cuoc !";
 	else 
-		cout << "You lost. The correct word is " << word; 
+		cout << "Ban da thua cuoc !" << word; 
 	return 0;
 }
 string chooseWord() 
@@ -34,12 +34,12 @@ string chooseWord()
 void renderGame(string guessedWord, int badGuessCount)
 {
 	cout << guessedWord << endl;
-	cout << "Number of wrong guesses: " << badGuessCount << endl;
+	cout << "So lan doan sai: " << badGuessCount << endl;
 }
 char readAGuess() 
 {
 	char input;
-	cout << "Your guess: ";
+	cout << "Nhap tu can doan : ";
 	cin >> input;
 	return input;
 }
